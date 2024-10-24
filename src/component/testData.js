@@ -31,6 +31,13 @@ const DataDisplay = () => {
                     </li>
                 ))}
             </ul>
+            <ul>
+                {comments.map(comment =>(
+                    <li key ={comment.id}>
+                      Comment on post {comment.postID}: {comment.text}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
